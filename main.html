@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<form method="post" action="/main.html">
-		<p>Feedback Form</p>
-		<label for="nam">Name</label>
-		<input type="text" name="nam" id="name" minlength="3" maxlength="50"><br>
-		<label for="fav"> Portfolio</label>
-		<input type="url" name="fav" required id="portfolio"><br>
-		<label for="fav">Favorite Color</label>
-		<input type="color" name="fav" id="favColor"><br>
-		<label for="ran">Likness</label>
-		<input type="range" name="ran" id="likness" min="1" max="100"><br>
-	</form>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<body>
+    <form method="post" action="/main.html">
+        <p>Feedback Form</p>
+
+        <label for="name">Name</label>
+        <input type="text" name="nam" id="name" minlength="3" maxlength="50" required>
+        <br><br>
+
+        <label for="portfolio">Portfolio</label>
+        <input type="url" name="fav" id="portfolio" required>
+        <br><br>
+
+        <label for="favColor">Favorite Color</label>
+        <input type="color" name="fav" id="favColor">
+        <br><br>
+
+        <label for="likeness">Likeness</label>
+        <input type="range" name="ran" id="likeness" min="1" max="100">
+        <br><br>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <!-- External JavaScript file -->
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
