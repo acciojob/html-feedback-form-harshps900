@@ -8,14 +8,14 @@
 
 <body>
 	<form method="post">
-		<label>Name</label>
-		<input type="text" id="name" min="3" maxlength="50"><br>
-		<label> Portfolio</label>
-		<input type="url" required id="portfolio"><br>
-		<label>Favorite Color</label>
-		<input type="color" id="favColor"><br>
-		<label>Likness</label>
-		<input type="range" id="likness" min="1" max="100"><br>
+		<label for="nam">Name</label>
+		<input type="text" name="nam" id="name" minlength="3" maxlength="50"><br>
+		<label for="fav"> Portfolio</label>
+		<input type="url" name="fav" required id="portfolio"><br>
+		<label for="fav">Favorite Color</label>
+		<input type="color" name="fav" id="favColor"><br>
+		<label for="ran">Likness</label>
+		<input type="range" name="ran" id="likness" min="1" max="100"><br>
 		<input type="submit">
 	</form>
 	<!-- the entire body must be written by student -->
